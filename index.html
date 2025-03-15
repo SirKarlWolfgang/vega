@@ -10,7 +10,6 @@
             font-family: 'FiveYearsOld';
             src: url('5yearsoldfont.ttf') format('truetype');
         }
-
         html, body {
             margin: 0;
             padding: 0;
@@ -28,20 +27,22 @@
             align-items: center;
          }
          
+         .content {
+            text-align: center;
+         }
+         
          h1 {
             font-family: 'FiveYearsOld', Arial, sans-serif;
             font-size: 6rem;
-            text-align: center;
             color: black;
+            margin-bottom: 1rem;
          }
-
         p {
             font-family: 'FiveYearsOld', Arial, sans-serif;
             font-size: 1rem;
             line-height: 1.5;
-            text-align: center;
             color: #AEB8C1;
-        }
+         }
          
          @media only screen and (max-width: 768px) {
             body {
@@ -54,13 +55,15 @@
              }
              
             p {
-            font-size: 0.9rem;
+                font-size: 0.9rem;
             }
          }
     </style>
 </head>
 <body>
-    <h1>WELCOME :-)</h1> <br>
-    <p>"site coming soon... maybe" ~03/25</p>
+    <div class="content">
+        <h1>WELCOME :-)</h1>
+        <p>"site coming soon... maybe" ~03/25</p>
+    </div>
 </body>
 </html>
