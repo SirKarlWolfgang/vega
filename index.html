@@ -30,21 +30,32 @@
          
          h1 {
             font-family: 'FiveYearsOld', Arial, sans-serif;
-            font-size: 5rem; /* Makes it big */
+            font-size: 6rem;
             text-align: center;
-            color: black; /* Change as needed */
+            color: black;
          }
+
+        p {
+            font-family: 'FiveYearsOld', Arial, sans-serif;
+            font-size: 1rem;
+            line-height: 1.5;
+            text-align: center;
+            color: #AEB8C1;
+        }
          
-         /* Mobile-specific adjustments */
          @media only screen and (max-width: 768px) {
-             body {
-                 background-attachment: scroll; /* Better performance on mobile */
-                 background-position: center top; /* Adjust positioning for mobile */
+            body {
+                 background-attachment: scroll;
+                 background-position: center top;
              }
              
-             h1 {
-                font-size: 3rem; /* Slightly smaller on mobile */
+            h1 {
+                font-size: 3rem;
              }
+             
+            p {
+            font-size: 0.9rem;
+            }
          }
     </style>
 </head>
