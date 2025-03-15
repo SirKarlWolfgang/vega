@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>VEEEEEEEGAA.</title>
     <style>
@@ -9,13 +11,22 @@
             padding: 0;
             height: 100%;
         }
-    body {
-        background-image: url('welcome page.png');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        font-family: Arial, sans-serif;
-    }
+        body {
+            background-image: url('pending_site.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+         }
+         
+         /* Mobile-specific adjustments */
+         @media only screen and (max-width: 768px) {
+             body {
+                 background-attachment: scroll; /* Better performance on mobile */
+                 background-position: center top; /* Adjust positioning for mobile */
+             }
+         }
     </style>
 </head>
 <body>
