@@ -6,18 +6,33 @@
     <link rel="stylesheet" href="style.css">
     <title>VEEEEEEEGAA.</title>
     <style>
+        @font-face {
+            font-family: 'FiveYearsOld';
+            src: url('5yearsoldfont.ttf') format('truetype');
+        }
+
         html, body {
             margin: 0;
             padding: 0;
             height: 100%;
         }
         body {
-            background-image: url('');
+            background-image: url('pending_site.png');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             background-attachment: fixed;
             font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+         
+         h1 {
+            font-family: 'FiveYearsOld', Arial, sans-serif;
+            font-size: 5rem; /* Makes it big */
+            text-align: center;
+            color: black; /* Change as needed */
          }
          
          /* Mobile-specific adjustments */
@@ -25,6 +40,10 @@
              body {
                  background-attachment: scroll; /* Better performance on mobile */
                  background-position: center top; /* Adjust positioning for mobile */
+             }
+             
+             h1 {
+                font-size: 3rem; /* Slightly smaller on mobile */
              }
          }
     </style>
