@@ -49,6 +49,15 @@
             color: #AEB8C1;
          }
          
+         .clickable {
+            cursor: pointer;
+            color: #AEB8C1;
+         }
+         
+         .clickable:hover {
+            color: #000000;
+         }
+         
          .icon {
             width: 50px;
             height: 50px;
@@ -73,8 +82,15 @@
 </head>
 <body>
     <div class="content">
-        <h1>WELCOME :-)</h1>
+        <h1 id="heading">WELCOME :-)</h1>
         <p>"site coming soon... maybe" ~03/25</p>
+        <p class="clickable" onclick="changeHeading()">>click me<</p>
     </div>
+
+    <script>
+        function changeHeading() {
+            document.getElementById("heading").innerText = "VEGA!";
+        }
+    </script>
 </body>
 </html>
