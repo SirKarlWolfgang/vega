@@ -112,6 +112,16 @@
         function changeHeading() {
             document.getElementById("heading").innerText = "Vegabonn!";
         }
+        function setRandomRotationSpeed() {
+    const square = document.querySelector(".rotating-square");
+    const randomDuration = (Math.random() * 3 + 1).toFixed(2); // between 1s and 4s
+    square.style.animationDuration = randomDuration + "s";
+}
+
+// Pick a new random speed every 5 seconds
+setInterval(setRandomRotationSpeed, 5000);
+setRandomRotationSpeed(); // run once at start
+
     </script>
 </body>
 </html>
