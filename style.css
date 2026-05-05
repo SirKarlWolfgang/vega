@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'FiveYearsOld';
+    src: url('fonts/5yearsoldfont.ttf') format('truetype');
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background-color: #EAEBEC;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'FiveYearsOld', Arial, sans-serif;
+    font-size: 6rem;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-family: 'FiveYearsOld', Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #AEB8C1;
+}
+
+.clickable {
+    cursor: pointer;
+    color: #AEB8C1;
+}
+
+.clickable:hover {
+    color: #000000;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.rotating-square {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    animation: rotateSquare 2s infinite linear;
+}
+
+@keyframes rotateSquare {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        background-attachment: scroll;
+        background-position: center top;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .rotating-square {
+        top: 20px;
+        left: 20px;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+::selection {
+    background-color: #AEB8C1;
+    color: #000000;
+}
